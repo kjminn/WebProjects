@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹패턴 4(오른쪽, 아래쪽)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #menu {
+            width: 260px;
+            float: right;
+        }
+        #content {
+            width: 700px;
+            float: left;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            body {
+                width: auto;
+            }
+            #menu {
+                width: auto;
+                float: none;
+            }
+            #content {
+                width: auto;
+                float: none;
+            }
+            
+        }
+    </style>    
+</head>
+<body>
+    <div id="content">
+        <h1>Lorem ipsum</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est porro hic eum autem sequi! Sequi aut nihil perferendis, fugit provident reiciendis quidem ipsam, dolore nemo eveniet libero laboriosam similique at.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est porro hic eum autem sequi! Sequi aut nihil perferendis, fugit provident reiciendis quidem ipsam, dolore nemo eveniet libero laboriosam similique at.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel aut provident nam consequuntur, nemo animi. Deserunt autem cumque ipsam ullam sit dicta sequi, natus rerum odit facere mollitia? Dolore, nisi.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam aspernatur eius voluptatibus consequatur odio sint molestiae? Voluptatibus quod at eum, natus est, sunt illo cumque, error voluptas hic quam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus minima, quae, cumque quasi alias sint voluptatem vero accusamus rerum nisi labore expedita iure magni voluptates repellat, pariatur beatae temporibus illo.
+        </p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>메뉴 1</li>
+            <li>메뉴 2</li>
+            <li>메뉴 3</li>
+        </ul>
+    </div>
+</body>
+</html>
