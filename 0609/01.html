@@ -41,7 +41,15 @@
                 }
                 img.src = "imgs/idol0" + count + ".jpg";
             }, 2000);
+
+            let a1 = document.getElementById("a1");
+            a1.onclick = function(event){
+            //    event.preventDefault(); // a태그의 디폴트 이벤트 제거
+                return false; // a태그의 디폴트 이벤트 제거
+            };
         }
+
+
     </script>
 </head>
 <body onload="showImageSlide()">
@@ -50,7 +58,7 @@
     <button onclick="addStar(this)">별 추가 </button><br><br>
     <button onmouseover="overChange(this)" onmouseout="outChange(this)">배경 및 글자색 변경</button><br><br>
     <img src="imgs/idol01.jpg" width="400" height="300" onclick="changeImg(this)" style="cursor: pointer;"><br><br>
-    <img src="imgs/idol01.jpg" width="400" height="300" id="img2"> 
-    
+    <img src="imgs/idol01.jpg" width="400" height="300" id="img2"><br><br> 
+    <a href="https://www.naver.com/" id="a1">디폴트 이벤트 제거</a>
 </body>
 </html>
